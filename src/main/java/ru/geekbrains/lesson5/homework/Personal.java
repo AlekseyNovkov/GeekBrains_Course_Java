@@ -4,7 +4,6 @@ public class Personal {
     private String name;
     private String middleName;
     private String lastName;
-    private String fio;
     private String position;
     private String email;
     private String fonNumber;
@@ -15,7 +14,6 @@ public class Personal {
          this.name = "Иван";
          this.middleName = "Иванович";
          this.lastName = "Иванов";
-         this.fio = lastName +" "+ name +" "+ middleName;
          this.position = "Оператор";
          this.email = "iiivanov@email.ru";
          this.fonNumber = "8(916)555-06-22";
@@ -31,7 +29,6 @@ public class Personal {
          this.lastName = lastName;
          this.name = name;
          this.middleName = middleName;
-         this.fio = lastName +" "+ name +" "+ middleName;
          this.position = position;
          this.email = email;
          this.fonNumber = fonNumber;
@@ -49,11 +46,6 @@ public class Personal {
 
     public String getLastName() {
         return this.lastName;
-    }
-
-    public String getFio() {
-        this.fio = lastName +" "+ name +" "+ middleName;
-        return this.fio;
     }
 
     public String getPosition() {
