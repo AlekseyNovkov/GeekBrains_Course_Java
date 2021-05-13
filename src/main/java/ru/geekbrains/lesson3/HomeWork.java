@@ -31,18 +31,15 @@ import static ru.geekbrains.lesson3.common.SayHello.sayHello;
 public class HomeWork {
 
     public static void main(String[] args) {
-        int playerSetNumber = 0;
-        boolean checkNextInt = false;
-
         Scanner scanner = new Scanner(System.in);
         String namePlayer = sayHello(scanner);
 
         System.out.println("Выберите игру в которую будем играть: \n     1 - 'Угадай число от 0 до 9' \n     2 - 'Угадай слово' \n     Любой другой символ - завершить сеанс.");
         Scanner scGetGame = new Scanner(System.in);
-        checkNextInt = scGetGame.hasNextInt();
+        boolean checkNextInt = scGetGame.hasNextInt();
 
         if (checkNextInt) {
-            playerSetNumber = scGetGame.nextInt();
+            int playerSetNumber = scGetGame.nextInt();
 
             if (playerSetNumber == 1) runGameGuessTheNumber(namePlayer);
             else if (playerSetNumber == 2) runGameGuessTheWord(namePlayer);
