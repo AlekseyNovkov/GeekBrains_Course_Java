@@ -1,9 +1,9 @@
-package ru.geekbrains.lesson3;
+package ru.geekbrains.lesson3.common;
 
 import java.util.Random;
 import java.util.Scanner;
 
-import static ru.geekbrains.lesson3.PlayAgain.playAgain;
+import static ru.geekbrains.lesson3.common.PlayAgain.playAgain;
 
 public class RunGameGuessTheNumber {
     public static void runGameGuessTheNumber(String namePlayer) {

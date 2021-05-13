@@ -1,9 +1,8 @@
-package ru.geekbrains.lesson3;
+package ru.geekbrains.lesson3.common;
 
-import java.sql.SQLOutput;
 import java.util.*;
 
-import static ru.geekbrains.lesson3.PlayAgain.playAgain;
+import static ru.geekbrains.lesson3.common.PlayAgain.playAgain;
 
 public class RunGameGuessTheWord {
     public static void runGameGuessTheWord(String namePlayer) {
@@ -44,6 +43,7 @@ public class RunGameGuessTheWord {
                     String findChars = matchesByCharacters(randomWord, playerSetLine);
 
                     System.out.println("Вы не угадали слово! Буквы, которые стоят на своих местах: '"+ findChars +"'. Попробуйте ещё раз.");
+                    checkNextLine = false;
                 }
             } else {
                 System.out.println("Вы не ввели слово! Попробуйте ещё раз.");

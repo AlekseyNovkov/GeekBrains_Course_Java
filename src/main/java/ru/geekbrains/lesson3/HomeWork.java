@@ -24,9 +24,9 @@ package ru.geekbrains.lesson3;
 
 import java.util.Scanner;
 
-import static ru.geekbrains.lesson3.RunGameGuessTheNumber.runGameGuessTheNumber;
-import static ru.geekbrains.lesson3.RunGameGuessTheWord.runGameGuessTheWord;
-import static ru.geekbrains.lesson3.SayHello.sayHello;
+import static ru.geekbrains.lesson3.common.RunGameGuessTheNumber.runGameGuessTheNumber;
+import static ru.geekbrains.lesson3.common.RunGameGuessTheWord.runGameGuessTheWord;
+import static ru.geekbrains.lesson3.common.SayHello.sayHello;
 
 public class HomeWork {
 
