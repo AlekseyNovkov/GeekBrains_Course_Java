@@ -11,7 +11,7 @@ public class TicTacToe {
     private static final char DOT_EMPTY = '.';
 
     private static char[][] field;
-    private static int fieldSizeX;
-    private static int fieldSizeY;
+    private static int fieldSizeX = 0;
+    private static int fieldSizeY = 0;
 //    String
 }
